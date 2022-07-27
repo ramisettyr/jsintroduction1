@@ -1,0 +1,16 @@
+<html>
+    <body style="text-align:center ; background-color:aqua;">
+        <h2><u>AREA OF CIRCLE</u></h2>
+        <h4>Enter the value of radius in the below box and click on submit</h4>
+        <input id="good" type="text">
+        <input type="button" value="submit" onclick="myF1()">
+        <p id="demo"></p>
+        <script>
+            function myF1(){
+                var r=document.getElementById("good").value;
+                var p=Math.PI*r*r;
+                document.getElementById("demo").innerHTML="The area of Circle is"+ p;
+            }
+        </script>
+    </body>
+</html>

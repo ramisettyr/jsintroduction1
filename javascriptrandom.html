@@ -1,0 +1,27 @@
+<html>
+    <body style="text-align:center; background-color: aqua;">
+        <h2><u>NUMBER IS MATCHED OR NOT?</u></h2>
+        <h4>Please input a number between 1 and 10</h4>
+        <input id="demo" type="text">
+        <input type="button" value="Submit" onclick="hello()">
+        <p id="good"></p>
+        <script>
+        function hello() { 
+            var x = Math.floor(Math.random() * 11);
+            var p = document.getElementById("demo").value;
+         
+            if (p === x) {
+              document.getElementById("good").innerHTML= "Number is Matched";
+            }else {
+              document.getElementById("good").innerHTML= "Number is Not matched";
+            }
+           
+        }
+        </script>
+        
+               
+
+
+        </script>
+    </body>
+</html>
